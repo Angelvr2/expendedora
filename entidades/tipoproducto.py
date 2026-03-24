@@ -1,5 +1,8 @@
-from tipoproducto import Tipoproducto
+from entidades.maquina import Maquina
+from enum import Enum
 
-class tipoproducto:
-    def __init__(self):
-        pass
+class TipoProducto(Enum):
+    Bebida = "Bebida"
+    Pan = "Pan"
+    Snack = "Snack"
+    Otro = "Otro"

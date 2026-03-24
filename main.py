@@ -1,3 +1,6 @@
+from entidades.maquina import Maquina
+from entidades.tipoproducto import TipoProducto
+
 try:
     while True:
         print("Elija una opcion \n1-ver inventario \n2-Comprar producto")
