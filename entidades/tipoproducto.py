@@ -1,4 +1,3 @@
-from entidades.maquina import Maquina
 from enum import Enum
 
 class TipoProducto(Enum):

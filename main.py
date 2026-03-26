@@ -1,5 +1,13 @@
 from entidades.maquina import Maquina
 from entidades.tipoproducto import TipoProducto
+from entidades.producto import Producto
+
+productos = [
+    Producto("Coca", 20, 5, TipoProducto.Bebida),
+    Producto("Sabritas", 18, 3, TipoProducto.Snack)
+]
+
+maquina = Maquina(productos)
 
 try:
     while True:
@@ -7,7 +15,8 @@ try:
         opcion = int(input())
 
         if opcion == 1:
-            print("Inventario")
+            maquina.mostrar_inventario()
+            
         elif opcion == 2:
             print("¿Que producto desea comprar?")
             producto = input()
